@@ -1,0 +1,160 @@
+body {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e9d2e7;
+}
+
+.titulo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 55px;
+  text-align: center;
+  color: #2f0b2c;
+}
+
+#frase {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: 200;
+  font-size: 35px;
+}
+
+#agregar-tarea {
+  border: 2px solid #5b1e56;
+  border-radius: 12px;
+  padding: 15px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bd8fba;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+}
+
+#agregar-tarea input {
+  border: 1px solid #5b1e56;
+  border-radius: 8px;
+  padding: 10px;
+  width: 70%;
+  font-size: 15px;
+}
+
+#agregar-tarea button {
+  border: 2px solid #5b1e56;
+  border-radius: 8px;
+  padding: 9px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #6d3368;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#agregar-tarea button:hover {
+  transform: scale(1.05);
+}
+
+#agregar-tarea select {
+  border: 1px solid #5b1e56;
+  border-radius: 8px;
+  padding: 9px;
+  width: 100px;
+  font-size: 14px;
+}
+
+#lista-tareas {
+  margin-top: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.tarea {
+  margin-left: -12px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid #6d3368;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #ffffff;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  justify-content: space-between; 
+  margin-bottom: 20px;
+}
+
+.tarea button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.tarea img {
+  width: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tarea img:hover {
+  transform: scale(1.1);
+}
+
+.prioridad-Baja {
+  border-radius: 10px;
+  padding: 6px;
+  border: 2px solid #6dbf7b;
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.prioridad-Media {
+  border-radius: 10px;
+  padding: 6px;
+  border: 2px solid #e0b84c;
+  background-color: #fff4d6;
+  color: #9a6d00;
+  font-size: 14px;
+}
+
+.prioridad-Alta {
+  border-radius: 10px;
+  padding: 6px;
+  border: 2px solid #d66a6a;
+  background-color: #fde2e2;
+  color: #9c1f1f;
+  font-size: 14px;
+}
+
+#contador {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.contenedor-filtro {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top: 30px;
+}
+
+#filtro {
+  border: 1px solid #5b1e56;
+  border-radius: 8px;
+  padding: 9px;
+  width: 100px;
+  font-size: 14px;
+}

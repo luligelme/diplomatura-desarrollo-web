@@ -1,0 +1,161 @@
+* {
+  background-color: #efc793;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #5c3116;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(57, 24, 4, 0.3);
+}
+
+.navbar ul {
+  margin: 0;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  background-color: #5c3116;
+  gap: 40px;
+  border: none;
+  outline: none;
+}
+
+.navbar li {
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+.navbar a {
+  color: #f3d4ab;
+  background-color: #5c3116;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #f3d4ab;
+  transition: 0.1s;
+}
+
+.articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.tile-articulo {
+  margin-top: 70px;
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #391804;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.texto-articulo {
+  text-align: justify;
+  max-width: 100%;
+}
+
+.texto-articulo p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #391804;
+}
+
+.imagen-articulo {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.imagen-articulo img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+footer {
+  margin-top: 70px;
+  border-top: solid 2px #5c3116;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 10px auto;
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
+  }
+  .texto-articulo p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .tile-articulo {
+    font-size: 30px;
+  }
+
+  .articulo {
+    max-width: 75%;
+  }
+  .navbar ul {
+    gap: 25px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .articulo {
+    max-width: 90%;
+  }
+  .texto-articulo p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .tile-articulo {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .navbar ul {
+    gap: 20px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}

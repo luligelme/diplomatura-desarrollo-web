@@ -1,0 +1,197 @@
+* {
+  background-color: #efc793;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #5c3116;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(57, 24, 4, 0.3);
+}
+
+.navbar ul {
+  margin: 0;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  background-color: #5c3116;
+  gap: 40px;
+  border: none;
+  outline: none;
+}
+
+.navbar li {
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+.navbar a {
+  color: #f3d4ab;
+  background-color: #5c3116;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #f3d4ab;
+  transition: 0.1s;
+}
+
+.title {
+  margin-top: 50px;
+  font-weight: 900;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  font-size: 50px;
+  color: #391804;
+}
+
+.productos {
+  margin: 50px auto;
+  display: flex;
+  max-width: 75%;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.imagen-producto {
+  width: 100%;
+  height: 200px;
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon-producto {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.icon-producto img {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.producto {
+  height: 300px;
+  width: 300px;
+  border: solid 2px #c1a076;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(57, 24, 4, 0.3);
+  background-color: #f3d4ab;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.descripcion-producto {
+  background-color: #f3d4ab;
+  position: relative;
+}
+
+.producto h4 {
+  margin: 15px;
+  color: #391804;
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #f3d4ab;
+}
+
+.producto p {
+  margin: 10px 15px;
+  color: #391804;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f3d4ab;
+}
+
+footer {
+  margin-top: 70px;
+  border-top: solid 2px #5c3116;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 10px auto;
+}
+@media (max-width: 768px) {
+  .title-articulo {
+    font-size: 40px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+  .navbar ul {
+    gap: 25px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width:480px) {
+  .title {
+    font-size: 35px;
+    max-width: 90%;
+    margin: 30px auto;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .navbar ul {
+    gap: 20px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}
